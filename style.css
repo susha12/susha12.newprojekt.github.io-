@@ -1,0 +1,154 @@
+body{
+    background-color: #ff0033a4;
+}
+.form_box{
+    width: 400px;
+    height: 700px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin: auto;
+    top: calc(50vh - 360px);
+    position: relative;
+    box-shadow: 2px 2px 2px rgb(163, 163, 163),
+    -2px 2px 2px rgb(163, 163, 163),
+    -2px -2px 2px rgb(163, 163, 163),
+    2px -2px 2px rgb(163, 163, 163);
+}
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    width: 70%;
+    border-radius: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 7px auto;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #d6d2d2;
+
+}
+.animacion{
+        box-shadow: 2px 2px 2px #f4511e,
+        -2px 2px 2px rgb(163, 163, 163),
+        -2px -2px 2px rgb(163, 163, 163),
+        2px -2px 2px rgb(163, 163, 163);
+    position: relative;
+    animation: mymove 5s ease infinite;
+}
+@keyframes mymove {
+    0% {
+        box-shadow: 2px 2px 2px #f4511e,
+        -2px 2px 2px rgb(163, 163, 163),
+        -2px -2px 2px rgb(163, 163, 163),
+        2px -2px 2px rgb(163, 163, 163);
+    }
+    25% {
+        box-shadow: 2px 2px 2px rgb(163, 163, 163),
+                    -2px 2px 2px #f4511e,
+                    -2px -2px 2px rgb(163, 163, 163),
+                    2px -2px 2px rgb(163, 163, 163);
+    }
+    50% {
+        box-shadow: 2px 2px 2px rgb(163, 163, 163),
+                    -2px 2px 2px rgb(163, 163, 163),
+                    -2px -2px 2px #f4511e,
+                    2px -2px 2px rgb(163, 163, 163);
+    }
+    75% {
+        box-shadow: 2px 2px 2px rgb(163, 163, 163) ,
+                    -2px 2px 2px rgb(163, 163, 163),
+                    -2px -2px 2px rgb(163, 163, 163),
+                    2px 2px 2px #f4511e;
+        }
+    100% {
+            box-shadow: 2px 2px 2px #f4511e,
+                        -2px 2px 2px rgb(163, 163, 163),
+                        -2px -2px 2px rgb(163, 163, 163),
+                        2px -2px 2px rgb(163, 163, 163);
+        }
+  }
+.contack_text{
+    margin: 7px;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255),
+                -2px -2px 2px rgb(255, 255, 255),
+                -2px 2px 2px rgb(255, 255, 255),
+                2px -2px 2px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.help_text{
+    font-size: 26px;
+    color: #f4511e;
+    margin: 7px;
+    
+    text-decoration: underline;
+}
+#button_files{
+    background-color: #FFFFFF;
+    box-shadow: none;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    height: 40px;
+}
+.box_cheked{
+    display: flex;
+    margin-bottom: 18px;
+   
+}
+#fname{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
+
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    margin: 25px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    transition: all 0.5s;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    transition: all 0.5s;
+  }
